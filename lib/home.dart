@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,15 +29,75 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Text('LoL'),
-                      Text('CS'),
+                      Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/lol.png'),
+                                fit: BoxFit.fill)),
+                        width: 120,
+                        height: 70,
+                        child: ConstrainedBox(
+                          child: FlatButton(
+                            onPressed: () =>
+                                Navigator.pushNamed(context, '/main'),
+                            child: Container(),
+                          ),
+                          constraints: BoxConstraints.expand(),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/cs.png'),
+                                fit: BoxFit.fill)),
+                        width: 100,
+                        height: 50,
+                        child: ConstrainedBox(
+                          child: FlatButton(
+                            onPressed: () =>
+                                Navigator.pushNamed(context, '/main'),
+                            child: Container(),
+                          ),
+                          constraints: BoxConstraints.expand(),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Text('Dota'),
-                      Text('Fortnite'),
+                      Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/dota.png'),
+                                fit: BoxFit.fill)),
+                        width: 100,
+                        height: 100,
+                        child: ConstrainedBox(
+                          child: FlatButton(
+                            onPressed: () =>
+                                Navigator.pushNamed(context, '/main'),
+                            child: Container(),
+                          ),
+                          constraints: BoxConstraints.expand(),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/fortnite.png'),
+                                fit: BoxFit.fill)),
+                        width: 100,
+                        height: 90,
+                        child: ConstrainedBox(
+                          child: FlatButton(
+                            onPressed: () =>
+                                Navigator.pushNamed(context, '/main'),
+                            child: Container(),
+                          ),
+                          constraints: BoxConstraints.expand(),
+                        ),
+                      ),
                     ],
                   ),
                 ],

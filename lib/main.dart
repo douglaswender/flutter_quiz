@@ -46,21 +46,23 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/splash.png'),
-            fit: BoxFit.fill
-          )
-        ),
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: ConstrainedBox(
-          child: FlatButton(
-            onPressed: () =>  Navigator.pushNamed(context, '/main'),
-            child: Container(),
+      body: SafeArea(
+              child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/splash.png'),
+              fit: BoxFit.fill
+            )
           ),
-          constraints: BoxConstraints.expand(),
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          child: ConstrainedBox(
+            child: FlatButton(
+              onPressed: () =>  Navigator.pushNamed(context, '/main'),
+              child: Container(),
+            ),
+            constraints: BoxConstraints.expand(),
+          ),
         ),
       ),
     );
