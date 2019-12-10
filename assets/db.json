@@ -1,0 +1,55 @@
+{
+    "tema": [{
+            "portugues": [{
+                    "id": 1,
+                    "descricao": "Qual a grafia correta?",
+                    "resposta_correta": "Sintetizar",
+                    "repostas": [
+                        "Sintetisar",
+                        "Cintetizar",
+                        "Cintetisar",
+                        "Çintetizar",
+                        "Çintetisar",
+                        "Zintetisar",
+                        "Zintetiçar"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "descricao": "Não sabia o ___________ de tanta pressa",
+                    "resposta_correta": "Por que",
+                    "repostas": [
+                        "Por quê",
+                        "Porque",
+                        "Porquê",
+                        "Nehuma das alternativas",
+                        "Pois",
+                        "Porventura",
+                        "Portanto"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "descricao": "Assinale a alternativa que apresenta palavra polissílaba:",
+                    "resposta_correta": "desconhecimento",
+                    "repostas": [
+                        "nós",
+                        "casa",
+                        "mágico",
+                        "Nehuma das alternativas",
+                        "lâmpada"
+                    ]
+                }
+            ]
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+    ]
+}

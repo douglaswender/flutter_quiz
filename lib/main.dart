@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:quiz/matematica.dart';
+import 'package:quiz/portugues.dart';
+import 'package:quiz/score.dart';
 
 import 'home.dart';
 
@@ -13,12 +16,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       initialRoute: '/',
       routes: {
         '/': (context) =>MyHomePage(title: 'Boa tarde',),
         '/main': (context)=>HomePage(),
+        '/score': (context)=>Score(),
+        '/portugues': (context)=>Portugues(),
+        '/matematica': (context)=>Matematica(),
       },
     );
   }
